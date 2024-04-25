@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+int size_of_matrix(){
+    
+}
+
+
 int main(){
     int i,j,k;
     int user_input;
@@ -9,53 +14,41 @@ int main(){
     printf("Please enter your row and colmn of matrix_a: ");
     scanf("%d %d", &row, &column);
     int matrix_a[row][column];
-
-    // printf("Your Matrix is [%d]", matrix[2][2]);
-
-    //part2 enter the number each position of matrix_a  
-    for (i = 0; i < row; i++)
-    {
-        for (j = 0; j < column; j++)
-        {
+    //part2.1 enter the number each position of matrix_a  
+    for (i = 0; i < row; i++){
+        for (j = 0; j < column; j++){
             scanf("%d", &user_input);
             matrix_a[i][j] = user_input;
         }
     }
     printf("This is matrix A:\n");
-    for (i = 0; i < row; i++)
-    {
-        for (j = 0; j < column; j++)
-        {
+    for (i = 0; i < row; i++){
+        for (j = 0; j < column; j++){
             printf("[%d]", matrix_a[i][j]);
         }
         printf("\n");
     }
     printf("\n");
-
-    //part3 enter the number each position of matrix_a
+    //part2.2 enter the number each position of matrix_b
     printf("Please enter your row and colmn of matrix_b: ");
     scanf("%d %d", &row, &column);
     int matrix_b[row][column];
-  
-    for (i = 0; i < row; i++)
-    {
-        for (j = 0; j < column; j++)
-        {
+    for (i = 0; i < row; i++){
+        for (j = 0; j < column; j++){
             scanf("%d", &user_input);
             matrix_b[i][j] = user_input;
         }
     }
     printf("This is matrix b:\n");
-    for (i = 0; i < row; i++)
-    {
-        for (j = 0; j < column; j++)
-        {
+    for (i = 0; i < row; i++){
+        for (j = 0; j < column; j++){
             printf("[%d]", matrix_b[i][j]);
         }
         printf("\n");
     }
     printf("\n");
-    //part4 select the operator and play it
+
+    //part3 select the operator and play it
     printf("1. Addition\n2. Subtraction\n3. Multiply\n");
     scanf("%d", &operator);
     int sum[row][column];
@@ -105,9 +98,7 @@ int main(){
             }
             printf("\n");
         }
-        
         break;
-    
     default:
         break;
     }
