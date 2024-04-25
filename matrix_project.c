@@ -1,10 +1,4 @@
 #include <stdio.h>
-
-int size_of_matrix(){
-    
-}
-
-
 int main(){
     int i,j,k;
     int user_input;
